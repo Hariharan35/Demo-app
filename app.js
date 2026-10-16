@@ -18,7 +18,7 @@ app.use('/api/students',studentRoutes)
 
 connectDB().then(()=>{
     app.listen(process.env.PORT,()=>{
-    console.log(`server running on port ${process.env.PORT}`);
+    console.log(`server running on port no ${process.env.PORT}`);
 
     });
 
