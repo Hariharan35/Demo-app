@@ -6,7 +6,7 @@ function authMiddleware(req,res,next){
         return res.status(401).json({message:'Authentication token invalid'});
     }
     if(!process.env.JWT_SECRET){
-        return next(new Error("JWT secret is not configured"));
+        return next(new Error("JWT secret key is not configured"));
     }
     try{
         
