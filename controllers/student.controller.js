@@ -15,7 +15,7 @@ class StudentController{
         try{
             const student=await studentService.getStudentById(req.params.id);
             if(!student){
-                return res.status(404).json({message:'Student not found'});
+                return res.status(404).json({message:'Student NOT found'});
             }
             res.json(student);
         }catch(err){
